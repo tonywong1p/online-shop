@@ -3,6 +3,8 @@
 A web-based shopping platform to helps customer find different products, their features, and new updates easily. The platform will also help in easy maintaining and updating products in the website for sales staff.
 To see a demo video, please go to [Demo Video Part1](https://youtu.be/l5G55HNQV9Y) and [Demo Video Part2](https://youtu.be/T1w8RDg3lHs)
 
+![image](https://github.com/tonywong1p/OpenShop/blob/master/image/demo.png?raw=true)
+
 ## Getting Started
 
 Please make sure to have the following computer environment setup.
