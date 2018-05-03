@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Expletus+Sans:600|Marmelad" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Mobile World</title>
+</head>
+
+<style>
+    .login-card {
+        border: solid #dee2e6;
+        border-width: 0 1px 1px 1px;
+        border-radius: 0 0 .25rem .25rem
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-primary navbar-dark">
+        <a class="navbar-brand" href="./default.asp">Mobile World</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center my-3">
+            <div class="col-6">
+                <h3>Welcome to Mobile World!</h3>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-buyer-tab" data-toggle="tab" href="#nav-buyer" role="tab" aria-controls="nav-buyer"
+                            aria-selected="true">Buyer</a>
+                        <a class="nav-item nav-link" id="nav-seller-tab" data-toggle="tab" href="#nav-seller" role="tab" aria-controls="nav-seller"
+                            aria-selected="false">Vendor</a>
+                    </div>
+                </nav>
+                <div class="tab-content login-card" id="nav-tabContent">
+                    <div class="tab-pane fade show active p-3" id="nav-buyer" role="tabpanel" aria-labelledby="nav-buyer-tab">
+                        <form action="./action/login.asp" method="post">
+                            <h3>Buyer Login</h3>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" name="username" aria-describedby="usernameHelp" placeholder="Enter username">
+                                <small id="usernameHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" placeholder="Enter password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <a href="./default.asp" class="btn btn-secondary">Cancel</a>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade p-3" id="nav-seller" role="tabpanel" aria-labelledby="nav-seller-tab">
+                        <form action="./action/vendor_login.asp" method="post">
+                            <h3>Vendor Login</h3>
+                            <div class="form-group">
+                                <label for="email">Vendor ID</label>
+                                <input type="text" class="form-control" name="username" aria-describedby="emailHelp" placeholder="Enter ID">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your ID with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <a href="./default.asp" class="btn btn-secondary">Cancel</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</body>
+
+</html>
